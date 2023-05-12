@@ -1,0 +1,79 @@
+body {
+  background-color: #84A5D4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+}
+
+.pricing-plan__container {
+  display: flex;
+  background-color: #FFFFFF;
+  max-width: 892px;
+  height: 380px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pricing-plan__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.4rem 0;
+  padding: 0.8rem 1.8rem;
+  flex: 1;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.pricing-plan__item:first-of-type {
+  margin-left: 1.4rem;
+}
+
+.pricing-plan__item:last-of-type {
+  margin-right: 1.4rem;
+}
+
+.pricing-plan__item:hover {
+  background-color: #F7F7F7;
+}
+
+.pricing-plan__item-image {
+  height: 5rem;
+  width: 5rem;
+}
+
+.pricing-plan__item-label {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #5C72CF;
+  margin-top: 36px;
+  letter-spacing: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.pricing-plan__item-description {
+  color: #A5A7AB;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 2rem 0;
+}
+
+.pricing-plan__item-price {
+  color: #5C72CF;
+}
+
+.pricing-plan__item-price span {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.pricing-plan__item-price span::before {
+  content: "$";
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
