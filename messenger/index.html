@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loop 1 - Step 4</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="card">
+        <div class="card__header">
+          <span class="card__status"></span>
+          <span class="card__username">Mark Zuckerberg</span>
+          <img class="card__close-icon" src="img/close.svg" alt="close" />
+        </div>
+        <div class="card__body">
+          <div class="card__block">
+            <div class="card__today">
+              <span class="card__today-label">Today</span>
+            </div>
+            <div class="sender card__item">
+              <span class="card__timestamp">10:53</span>
+              <span class="card__message">
+                Hi, Mark! I made a new design for Messenger App.
+              </span>
+            </div>
+            <div class="receiver card__item">
+              <span class="card__timestamp">10:57</span>
+              <span class="card__message">
+                Yo! Send it to my assistant and we'll review it during the year.
+              </span>
+            </div>
+            <div class="sender card__item">
+              <span class="card__timestamp">11:03</span>
+              <span class="card__message">But Mark...</span>
+            </div>
+            <div class="receiver blocked card__item">
+              <span class="card__message">You were blocked by the user.</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__footer">
+          <input
+            class="card__input"
+            type="text"
+            placeholder="Enter your message"
+          />
+          <button class="card__send">Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
