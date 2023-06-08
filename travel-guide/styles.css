@@ -1,0 +1,159 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f6ecea;
+}
+
+.card {
+  max-width: 1000px;
+  height: 640px;
+  background-color: #ffffff;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 44px 28px -24px #c89785;
+  display: flex;
+}
+
+.card__left {
+  width: 360px;
+  height: 100%;
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+  color: #7186a7;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card__right {
+  flex: 1;
+}
+
+.card__back {
+  width: fit-content;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.card__back:hover {
+  color: #000000;
+}
+
+.card__back:hover .card__back-icon {
+  fill: #000000;
+}
+
+.card__back-icon {
+  vertical-align: middle;
+  fill: #7186a7;
+  width: 16px;
+  height: 16px;
+}
+
+.card__back-label {
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card__nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__nav-item {
+  padding: 36px 20px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  color: #7186a7;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.card__nav-item:hover {
+  color: #000000;
+}
+
+.card__nav-item--selected {
+  color: #000000;
+}
+
+.card__article {
+  font-family: 'Playfair Display', sans-serif;
+  padding: 60px 100px;
+}
+
+.card__title {
+  font-size: 52px;
+  margin: 0;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.card__title::after {
+  content: '';
+  border-bottom: 4px solid #000000;
+  position: absolute;
+  width: 96px;
+  right: 20px;
+  bottom: 28px;
+}
+
+.card__content {
+  display: flex;
+  margin-top: 52px;
+}
+
+.card__video {
+  position: relative;
+}
+
+.card__video-preview {
+  height: 120px;
+}
+
+.card__video-play {
+  cursor: pointer;
+  position: absolute;
+  inset: 0;
+  margin: 44px auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fbf5f9;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__paragraph {
+  margin: 0;
+  margin-left: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.card__view-all {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 12px;
+}
+
+.card__forward-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card__forward-icon {
+  width: 16px;
+  height: 16px;
+}
